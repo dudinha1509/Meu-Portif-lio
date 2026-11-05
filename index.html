@@ -96,6 +96,11 @@
             box-shadow: 0 4px 14px rgb(36 110 165 / 6%);
         }
 
+        .featured-course {
+            border: 2px solid #1479b8;
+            background: #eaf6ff;
+        }
+
         .course h2 {
             margin: 0;
             color: #23445f;
@@ -103,10 +108,22 @@
             line-height: 1.4;
         }
 
+        .featured-course h2 {
+            color: #164b75;
+            font-size: 1.15rem;
+        }
+
         .hours {
             color: #1479b8;
             font-size: 0.95rem;
             font-weight: 700;
+        }
+
+        .featured-course .hours {
+            width: fit-content;
+            padding: 6px 10px;
+            border-radius: 6px;
+            background: #cdeaff;
         }
 
         .total {
@@ -119,6 +136,24 @@
             font-size: 1.1rem;
             font-weight: 700;
             text-align: center;
+        }
+
+        .learn-more {
+            display: block;
+            width: fit-content;
+            margin: 16px auto 0;
+            padding: 12px 20px;
+            border-radius: 8px;
+            background: #1479b8;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .learn-more:hover,
+        .learn-more:focus-visible {
+            background: #105f91;
         }
 
         @media (max-width: 640px) {
@@ -183,9 +218,14 @@
                 <h2>Programação com IA Generativa</h2>
                 <span class="hours">40 horas</span>
             </li>
+            <li class="course featured-course">
+                <h2>Curso realizado na AFESU Morro Velho em parceria com o SENAI</h2>
+                <span class="hours">Certificado pelo SENAI</span>
+            </li>
         </ul>
 
-        <p class="total">Carga horária total: 380 horas</p>
+        <p class="total">Carga horária informada: 380 horas</p>
+    <a class="learn-more" href="https://www.sp.senai.br/unidade/leopoldina/" target="_blank" rel="noopener noreferrer">Saiba mais sobre o SENAI</a>
         </section>
     </main>
 </body>
